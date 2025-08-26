@@ -1,0 +1,877 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    height: 450vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(211, 211, 211, 0.125);
+}
+
+/* nav-container */
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 50px;
+    position: fixed;
+    width: 95%;
+    background-color: #222222a4;
+}
+
+.nav-container img {
+    width: 60px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.about-nav {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(254, 255, 255);
+    text-decoration: none;
+}
+
+/* head-container */
+.head-container {
+    flex: 6;
+    background-image: url(../photo/6147560920864377225_121.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.head-con {
+    display: flex;
+    align-items: center;
+    /* padding: 80px; */
+    color: rgba(251, 249, 249, 0.847);
+}
+
+.text-head p {
+    font-size: 20px;
+}
+
+.text-head h1 {
+    color: rgb(6, 183, 241);
+    font-size: 60px;
+}
+
+.text-head {
+    border-radius: 10px;
+    padding-top: 150px;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(95, 92, 92, 0.212);
+}
+
+.marquee {
+    color: rgb(19, 18, 17);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* value-container */
+
+.value-container {
+    flex: 2;
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-container h1 {
+    font-size: 30px;
+}
+
+.value-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-container p {
+    margin-bottom: 80px;
+    /* padding: 0px 300px; */
+    text-align: center;
+    color: rgba(0, 0, 0, 0.382);
+}
+
+.value-container h1 {
+    margin-bottom: 10px;
+    color: rgb(6, 183, 241);
+}
+
+.value-body img {
+    width: 80px;
+}
+
+.head-value {
+    width: 200px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding-right: 80px;
+}
+
+.head-value p {
+    color: rgba(0, 0, 0, 0.501);
+    font-size: 16px;
+}
+
+/* Canteen-section-coantier */
+.Canteen-section-coantier {
+    flex: 6;
+}
+
+.canteen-s {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.man-canteen {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(6, 182, 241, 0.204);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: 1px solid rgb(6, 183, 241);
+}
+
+.man-canteen:hover {
+    transform: translateY(-5px);
+}
+
+.man-canteen img {
+    width: 150px;
+    height: 150px;
+}
+
+.man-canteen p {
+    color: rgba(0, 0, 0, 0.614);
+}
+
+.text-sectiov {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #e6e0e0;
+    padding: 12px;
+    color: rgba(32, 34, 34, 0.808);
+}
+
+th {
+    background-color: rgba(6, 182, 241, 0.755);
+}
+
+.poto-aro img {
+    width: 30%;
+    height: 260px;
+}
+
+.food p {
+    font-size: 16px;
+
+    margin-bottom: 30px;
+}
+
+.food h1,
+h2 {
+    color: orange;
+}
+
+.food {
+    color: rgba(0, 0, 0, 0.614);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* sports */
+.sport-container {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: black;
+    padding-top: 10px;
+}
+
+.sport-container h1 {
+    margin-left: 20px;
+    color: orange;
+}
+
+.sport-container p {
+    color: rgb(243, 241, 241);
+}
+
+.man-sport {
+
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    padding: 10px 30px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    overflow-x: auto;
+    background-color: rgb(7, 7, 7);
+}
+
+.card {
+    margin: 10px 0px 30px 0px;
+    flex: 0 0 auto;
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.card p {
+    padding: 0 15px 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.man-sport::-webkit-scrollbar {
+    display: none;
+}
+
+/* aerobic-container */
+.aerobic-container {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.poto-aro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.poto-aro video,
+.poto-aro img {
+    border: 2px solid rgba(6, 182, 241, 0.755);
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(6, 182, 241, 0.755);
+}
+
+/* contactus-container */
+form {
+    background-color: rgb(252, 249, 249);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(6, 182, 241, 0.755);
+    border: 1px solid rgba(6, 182, 241, 0.755);
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.223);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #00ffb7;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0ee540;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #29e6229a;
+}
+
+.main-registration-content {
+    width: 50%;
+
+}
+
+.main-registration-content p {
+    margin-top: 10px;
+    font-size: medium;
+}
+
+.main-registration-content ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main-registration-content ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-registration-content ul li img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.contactus-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background-color: #19b9fe50;
+}
+
+.bb {
+    width: 50%;
+}
+
+.cc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.cc p {
+    font-size: 16px;
+    color: #fffefed3;
+    text-align: center;
+}
+
+/* .location-container */
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    padding-bottom: 10px;
+    gap: 20px;
+
+}
+
+.cc h1 {
+    color: orange;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+/* footer-container */
+.footer-container {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    background-color: black;
+    color: rgba(255, 255, 255, 0.745);
+    padding: 20px;
+}
+
+.foot-con img {
+    width: 30px;
+}
+
+.foot-con h3 {
+    color: white;
+}
+
+.foot-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    gap: 15px;
+}
+
+.kk {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (min-width:800px) and (max-width:890px) {
+    body {
+        height: 400vh;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .head-container {
+        flex: 2;
+
+    }
+
+    .text-head {
+        height: 400px;
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+
+    marquee {
+        display: none;
+    }
+
+    .text-head p {
+        font-size: 16px;
+    }
+
+    .text-head h1 {
+
+        font-size: 40px;
+    }
+
+    .value-container p {
+        margin-bottom: 80px;
+        padding: 0px 10px;
+    }
+
+    .value-body p {
+
+        font-size: 11px;
+    }
+
+    .value-body img {
+        width: 40px;
+    }
+
+    .head-value {
+        margin-bottom: 20px;
+        padding-right: 10px;
+    }
+
+    .value-container {
+        flex: 0.4;
+    }
+
+    .Canteen-section-coantier {
+        flex: 2;
+    }
+
+    .canteen-s {
+        padding: 20px;
+    }
+
+    .man-canteen {
+        width: 500px;
+    }
+
+    .man-canteen img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .man-canteen p {
+        font-size: 13px;
+    }
+
+    .food h1 {
+        font-size: 25px;
+    }
+
+    .Canteen-section-coantier {
+        flex: 1.5;
+    }
+
+    .sport-container {
+        flex: 1.1;
+    }
+
+    .aerobic-container {
+        flex: 1.5;
+    }
+
+    .poto-aro img,
+    .poto-aro video {
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 20px;
+        width: 80%;
+
+    }
+
+    input,
+    select,
+    textarea {
+        width: 90%;
+        padding: none;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    .cook {
+        display: none;
+    }
+
+    .contactus-container {
+        flex: 1;
+        padding: 20px 20px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .bb {
+        width: 50%;
+    }
+
+    .cc {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .cc h1 {
+        font-size: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    iframe {
+        width: 900px;
+    }
+
+    .foot-con>.ll {
+        font-size: 13px;
+    }
+
+    .foot-con img {
+        width: 20px;
+    }
+
+    .kk p {
+        font-size: 13px;
+    }
+}
+
+@media (min-width:428px) and (max-width:520px) {
+
+    body {
+        height: 400vh;
+    }
+
+    .nav-container {
+        width: 96%;
+        padding: 5px 10px;
+    }
+
+    .nav-container img {
+        width: 30px;
+    }
+
+    a {
+        font-size: 11px;
+    }
+
+    .head-container {
+        flex: 2;
+
+    }
+
+    marquee {
+        font-size: 6px;
+    }
+
+    .text-head {
+        height: 200px;
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+
+    .text-head p {
+        font-size: 8px;
+    }
+
+    .text-head h1 {
+
+        font-size: 20px;
+    }
+
+    .value-container p {
+        margin-bottom: 30px;
+        padding: 0px 20px;
+    }
+
+    .value-container h1 {
+        font-size: 20px;
+    }
+
+    .value-body p {
+
+        font-size: 11px;
+    }
+
+
+    .value-body img {
+        width: 25px;
+    }
+
+    .value-container {
+        flex: 1;
+        padding: 20px 20px 0px 20px;
+    }
+     .value-container p{
+        font-size: 11px;
+     }
+
+    .head-value {
+        margin-bottom: 20px;
+        padding-right: 0px;
+    }
+    .head-value h3{
+        font-size:13px;
+    }
+
+    .value-container {
+        flex: 0.4;
+    }
+
+    .Canteen-section-coantier {
+        flex: 2;
+    }
+    .Canteen-section-coantier h1{
+        font-size: 16px;
+    }
+    .canteen-s {
+        padding: 20px;
+    }
+    .Canteen-section-coantier p{
+        font-size: 11px;
+    }
+
+    .man-canteen {
+        width: 500px;
+    }
+
+    .man-canteen img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .man-canteen p {
+        font-size: 11px;
+    }
+
+    .food h1 {
+        font-size: 25px;
+    }
+
+    .Canteen-section-coantier {
+        flex: 1.5;
+    }
+
+    .sport-container {
+        flex: 1.1;
+    }
+
+    .aerobic-container {
+        flex: 1.5;
+    }
+    .aerobic-container p{
+      text-align: center;
+    }
+    .poto-aro img,
+    .poto-aro video {
+        width: 350px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    form {
+        padding: 10px;
+        width: 95%;
+
+    }
+
+    input,
+    select,
+    textarea {
+        width: 90%;
+        padding: none;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    .cook {
+        display: none;
+    }
+
+    .contactus-container {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .bb {
+        width: 70%;
+    }
+
+    .cc {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding-left: 10px;
+    }
+
+    .cc h1 {
+        font-size: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 5px;
+    }
+
+    iframe {
+        width: 570px;
+    }
+
+    .foot-con>.ll {
+        font-size: 11px;
+    }
+
+    .foot-con img {
+        width: 20px;
+    }
+     .foot-con h3{
+        font-size: 16px;
+     }
+
+    .kk p {
+        font-size: 11px;
+    }
+    .contactus-container h1{
+        font-size: 20px;
+        text-align: center;
+
+    }
+}
