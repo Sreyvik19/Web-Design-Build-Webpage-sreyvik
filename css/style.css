@@ -669,7 +669,7 @@ button:hover {
     }
 }
 
-@media (min-width:428px) and (max-width:520px) {
+@media (min-width:300px) and (max-width:600px) {
 
     body {
         height: 400vh;
