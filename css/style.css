@@ -765,16 +765,20 @@ button:hover {
     }
 
     .man-canteen {
+        display: flex;
+        flex-direction: column;
         width: 500px;
     }
 
     .man-canteen img {
-        width: 100px;
+        width: 200px;
         height: 100px;
     }
 
     .man-canteen p {
-        font-size: 11px;
+      text-align: center;
+        font-size: 8px;
+        padding: 10px;
     }
 
     .food h1 {
