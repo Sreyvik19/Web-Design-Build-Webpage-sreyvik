@@ -669,7 +669,7 @@ button:hover {
     }
 }
 
-@media (min-width:428px) and (max-width:520px) {
+@media (min-width:300px) and (max-width:600px) {
 
     body {
         height: 400vh;
@@ -837,7 +837,8 @@ button:hover {
     }
 
     .bb {
-        width: 70%;
+        width: 100%;
+
     }
 
     .cc {
@@ -856,7 +857,7 @@ button:hover {
     }
 
     iframe {
-        width: 450px;
+        width: 430px;
     }
 
     .foot-con>.ll {
@@ -869,7 +870,7 @@ button:hover {
      .foot-con h3{
         font-size: 11px;
      }
-
+    
     .kk p {
         font-size: 8px;
     }
@@ -877,5 +878,8 @@ button:hover {
         font-size: 20px;
         text-align: center;
 
+    }
+    .ceok{
+        display: none;
     }
 }
