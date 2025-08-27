@@ -669,7 +669,7 @@ button:hover {
     }
 }
 
-@media (min-width:300px) and (max-width:600px) {
+@media (min-width:428px) and (max-width:520px) {
 
     body {
         height: 400vh;
@@ -856,22 +856,22 @@ button:hover {
     }
 
     iframe {
-        width: 570px;
+        width: 450px;
     }
 
     .foot-con>.ll {
-        font-size: 11px;
+        font-size: 8px;
     }
 
     .foot-con img {
         width: 20px;
     }
      .foot-con h3{
-        font-size: 16px;
+        font-size: 11px;
      }
 
     .kk p {
-        font-size: 11px;
+        font-size: 8px;
     }
     .contactus-container h1{
         font-size: 20px;
